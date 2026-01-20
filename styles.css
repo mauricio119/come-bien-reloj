@@ -1,7 +1,7 @@
 :root{
   --bg: transparent;
-  --card: #FFF2D6;          /* taupe como referencia */
-  --text: #155638;
+  --card: #FFF2D6;          /* durazno */
+  --text: #155638;          /* verde Come Bien */
   --radius: 22px;
 }
 
@@ -13,14 +13,16 @@ body{
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
+/* CONTENEDOR GENERAL */
 .clock-wrapper{
   display:flex;
   gap: 16px;
   padding: 16px;
   justify-content: center;
+  align-items: center;
 }
 
-/* TARJETA FLIP */
+/* TARJETA */
 .flip-card{
   width: 140px;
   height: 200px;
@@ -48,15 +50,37 @@ body{
   left:12px;
   right:12px;
   height:1px;
-  background: rgba(255,255,255,0.45);
+  background: rgba(21,86,56,0.35);
 }
 
-/* TEXTO INFERIOR */
+/* TEXTO INFERIOR (AM/PM y día) */
 .label{
   position:absolute;
   bottom:10px;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.08em;
-  color: #155638;
+  color: var(--text);
+}
+
+/* DOS PUNTOS ENTRE TARJETAS */
+.colon{
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 6px;
+}
+
+/* PARPADEO */
+.blink{
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink{
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
 }
