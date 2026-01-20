@@ -1,6 +1,6 @@
 const days = [
-  "SUNDAY","MONDAY","TUESDAY","WEDNESDAY",
-  "THURSDAY","FRIDAY","SATURDAY"
+  "DOMINGO","LUNES","MARTES","MIÉRCOLES",
+  "JUEVES","VIERNES","SÁBADO"
 ];
 
 function updateClock(){
