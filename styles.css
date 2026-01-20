@@ -24,8 +24,8 @@ body{
 
 /* TARJETA */
 .flip-card{
-  width: 140px;
-  height: 220px;
+  width: 170px;
+  height: 200px;
   background: var(--card);
   border-radius: var(--radius);
   position: relative;
